@@ -8,7 +8,12 @@
 import scrapy
 
 
-class SteamAchievementsItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class App(scrapy.Item):
+    appid = scrapy.Field()
+    name = scrapy.Field()
+
+
+class AchievementPercentage(scrapy.Item):
+    appid = scrapy.Field()
+    name = scrapy.Field()
+    percent = scrapy.Field()

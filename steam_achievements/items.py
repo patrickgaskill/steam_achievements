@@ -8,12 +8,8 @@
 import scrapy
 
 
-class App(scrapy.Item):
-    appid = scrapy.Field()
-    name = scrapy.Field()
-
-
 class AchievementPercentage(scrapy.Item):
     appid = scrapy.Field()
+    appname = scrapy.Field()
     name = scrapy.Field()
     percent = scrapy.Field()

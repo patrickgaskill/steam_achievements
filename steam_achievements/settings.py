@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import logging
 
 # Scrapy settings for steam_achievements project
 #
@@ -14,6 +15,10 @@ BOT_NAME = 'steam_achievements'
 SPIDER_MODULES = ['steam_achievements.spiders']
 NEWSPIDER_MODULE = 'steam_achievements.spiders'
 
+FEED_FORMAT = 'csv'
+FEED_URI = 'file:///Users/patrickgaskill/Downloads/achievements.csv'
+
+LOG_LEVEL = logging.INFO
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'steam_achievements (+http://www.yourdomain.com)'
@@ -31,7 +36,7 @@ ROBOTSTXT_OBEY = False
 
 # Allow 200 requests every 5 minutes as per
 # https://www.reddit.com/r/Steam/comments/304dft/steam_store_api_is_there_a_throttling_limit_on/
-DOWNLOAD_DELAY = 1.5
+# DOWNLOAD_DELAY = 1.5
 
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16

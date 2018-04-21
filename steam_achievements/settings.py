@@ -16,7 +16,6 @@ SPIDER_MODULES = ['steam_achievements.spiders']
 NEWSPIDER_MODULE = 'steam_achievements.spiders'
 
 FEED_FORMAT = 'csv'
-FEED_URI = 'file:///Users/patrickgaskill/Downloads/achievements.csv'
 
 LOG_LEVEL = logging.INFO
 
